@@ -7,6 +7,230 @@
 <link href="./dist/output.css" rel="stylesheet">
 </head>
 <body>
+    <header id="header" class="w-full bg-firstBackground ">
+        <div class="container">
+            <div class="header__top-bar  
+            lg:flex  lg:justify-between lg:items-center lg:h-[42px]
+            md:h-[80px]
+            h-[130px]">
+                <div class="header__welcome lg:my-[14px] mb-3">
+                    <p class="text-sm text-textColor">Welcome to world wide Megamart</p>
+                </div>
+                <div class="header__info lg:my-[12px]">
+                    <ul class="flex items-center justify-around gap-5">
+                        <li class="
+                        lg:flex lg:items-center lg:justify-end lg:flex-row
+                        
+                        flex justify-center items-center flex-col">
+                            <i class="fa-solid fa-location-dot text-primaryColor w-[18px] h-[18px] mr-[6px]"></i>
+                            <p class="text-[14px] ">Dilever to <span class="font-semibold">423651</span></p>
+                            <!-- border right -->
+                        </li>
+                        <div class="separator"></div>
+                        <li class="lg:flex lg:items-center lg:justify-end lg:flex-row
+                        flex justify-center items-center flex-col">
+                            <i class="fa-solid fa-truck-moving text-primaryColor w-[18px] h-[18px] mr-[6px]"></i>
+                            <p class="text-[14px]">Track your order</p>
+                            <!-- border right -->
+                        </li>
+                        <div class="separator"></div>
+                        <li class="lg:flex lg:items-center lg:justify-end lg:flex-row
+                        flex justify-center items-center flex-col">
+                            <i class="fa-solid fa-percent text-primaryColor w-[18px] h-[18px] mr-[6px]"></i>
+                            <p class="text-[14px]">All Offers</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <nav class="bg-white w-full py-8  ">
+        <div class="container">
+            <div class="nav__main flex justify-between items-center py-[16px]">
+                <div class="nav__logo flex items-center justify-start">
+                    <div class="nav__logo-icon w-[48px] h-[48px] flex justify-center items-center bg-thirdBackground rounded">
+                        <i class="fa-solid fa-bars-staggered text-3xl text-primaryColor mt-4 ml-[12px] mb-[14px] mr-[10px]"></i>
+                    </div>
+                <p class="text-primaryColor text-xl ml-4 font-bold">MegaMart</p>
+                </div>
+                <div class="nav__searchbar flex justify-between items-center bg-thirdBackground rounded w-[350px] h-[48px] py-[15px] px-4">
+                    <div class="nav__searchbar-text flex  gap-2 items-center">
+                        <i class="fa-solid fa-magnifying-glass text-primaryColor"></i>
+                        <p class="text-xs">Search essentials, groceries and more...</p>
+                    </div>
+                    <div class="nav__searchbar-listIcon w-6 h-6 flex justify-center items-center">
+                        <i class="fa-solid fa-list my-[12px] text-primaryColor"></i>
+                    </div>
+                </div>
+                <div class="nav__data flex ">
+                    <div class="nav__data-auth flex items-center  pr-5">
+                        <i class="fa-solid fa-user mr-[6px] py-[3px] text-primaryColor"></i>
+                        <p class="py-[3px] font-bold">Sign Up/Sign In</p>
+                    </div>
+                    <div class="separator mr-2"></div>
+                    <div class="nav__cart flex items-center gap-1  ">
+                        <i class="fa-solid fa-cart-shopping  text-primaryColor"></i>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+                <div class="nav__categories flex justify-center items-center gap-2 pt-[17px] pb-[16px]  ">
+                    <div class="nav__category--groceries-dropdown relative group ">
+        
+                    <button class="nav__category--groceries-btn btn-primary flex  items-center gap-1">
+                        Groceries
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="nav__category--groceries-dropdownContent 
+                        absolute min-w-20 min-h-10 
+                        flex-col mx-1 p-2 
+                        hidden group-hover:flex">
+                        
+                        <a class="px-1 font-semibold border-b" href="#">item one</a>
+                        <a class="px-1 font-semibold border-b" href="#">item two</a>
+                        <a class="px-1 font-semibold border-b" href="#">item three</a>
+                    </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                    <div class="nav__category--groceries-dropdown relative group ">
+            
+                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
+                            Groceries
+                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
+                        </button>
+
+                        <div class="nav__category--groceries-dropdownContent 
+                            absolute min-w-20 min-h-10 
+                            flex-col mx-1 p-2 
+                            hidden group-hover:flex">
+                            
+                            <a class="px-2 font-semibold border-b" href="#">item one</a>
+                            <a class="px-2 font-semibold border-b" href="#">item two</a>
+                            <a class="px-2 font-semibold border-b" href="#">item three</a>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+        <div class="line"></div>
+        
+
+
+        
+    </nav>
+            
 </body>
 </html>

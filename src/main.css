@@ -8,7 +8,7 @@
         @apply scroll-smooth
     }
     body{
-        @apply  bg-white text-textColor tracking-wider font-dmsans 
+        @apply  bg-white text-textColor tracking-wider font-dmsans box-border
     }
     /* section {
         @apply pt-16 pb-4 md:pt-20 ;
@@ -19,4 +19,14 @@
     .separator{
         @apply w-[1px] h-7 bg-lineColor
     }
+    .line{
+        @apply w-full h-[3px] bg-borderColor
+    }
+    .btn-primary{
+        @apply text-white px-[4px] py-[9px] rounded-full bg-primaryColor 
+    }
+    .btn{
+        @apply text-headingColor px-[4px] py-[9px] rounded-full bg-white  
+    }
+    
 }
