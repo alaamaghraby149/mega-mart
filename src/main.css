@@ -53,11 +53,11 @@
         bg-primaryColor text-white rounded-tr-[16px]
         rounded-bl-[16px]
     }
-    footer .footer__content{
+    /* footer .footer__content{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 30px;
-    }
+    } */
     .footer__line{
         @apply w-48 h-1 bg-white rounded mt-4
     }
