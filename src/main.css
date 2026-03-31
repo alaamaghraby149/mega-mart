@@ -28,5 +28,25 @@
     .btn{
         @apply text-headingColor px-[4px] py-[9px] rounded-full bg-white  
     }
-    
+    .title{
+        @apply text-textColor text-[24px] tracking-wide leading-7 mb-4
+    }
+    .line2{
+        @apply w-96 h-1 bg-primaryColor
+    }
+    .deals__body{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: .5rem;
+    }
+    .deals__body .deal__card{
+        @apply w-full h-auto
+        border 
+        cursor-pointer
+    }
+    .deals .sale-percent{
+        @apply w-[51px] h-auto
+        bg-primaryColor text-white rounded-tr-[16px]
+        rounded-bl-[16px]
+    }
 }
