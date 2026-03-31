@@ -40,6 +40,7 @@
         grid-template-columns: repeat(5,1fr);
         gap: 1.5rem;
     }
+    
     .deals__body .deal__card,
     .categories__body .category__card{
         @apply w-full h-auto
