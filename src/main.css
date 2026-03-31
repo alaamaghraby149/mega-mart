@@ -34,17 +34,20 @@
     .line2{
         @apply w-96 h-1 bg-primaryColor
     }
-    .deals__body{
+    .deals__body,
+    .categories__body{
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        gap: .5rem;
+        gap: 1.5rem;
     }
-    .deals__body .deal__card{
+    .deals__body .deal__card,
+    .categories__body .category__card{
         @apply w-full h-auto
         border 
         cursor-pointer
     }
-    .deals .sale-percent{
+    .deals .sale-percent,
+    .categories .sale-percent{
         @apply w-[51px] h-auto
         bg-primaryColor text-white rounded-tr-[16px]
         rounded-bl-[16px]
