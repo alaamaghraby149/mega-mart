@@ -2,12 +2,6 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    screens:{
-      sm:'480px',
-      md:'768px',
-      lg:'1024px',
-      
-    },
     extend: {
       colors : {
         primaryColor: '#008ECC',
@@ -25,9 +19,8 @@ module.exports = {
     },
     container: {
       center:true,
-      padding:{
-        DEFAULT: '1rem',
-      }
+      
+
     },
     fontFamily : {
       HostGrotesk:['Host Grotesk','sans-serif'],
