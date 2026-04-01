@@ -61,4 +61,5 @@
     .footer__line{
         @apply w-48 h-1 bg-white rounded mt-4
     }
+    
 }
