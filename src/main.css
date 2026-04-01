@@ -61,5 +61,20 @@
     .footer__line{
         @apply w-48 h-1 bg-white rounded mt-4
     }
-    
+    @media (min-width:768px) {
+        .deals__body,
+    .categories__body{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+    }
+    @media (min-width:1024px) {
+        .deals__body,
+    .categories__body{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 1.5rem;
+    }
+    }
 }
