@@ -34,6 +34,31 @@
     .line2{
         @apply w-96 h-1 bg-primaryColor
     }
+.swiper-button-next svg,
+.swiper-button-prev svg,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply hidden;
+}
+
+.mySwiper {
+  @apply overflow-hidden;
+}
+
+.mySwiper .swiper-wrapper,
+.mySwiper .swiper-slide {
+  @apply rounded;
+}
+
+.slider .swiper-button-next,
+.slider .swiper-button-prev {
+  @apply w-11 h-11 rounded-full bg-thirdBackground text-primaryColor shadow-sm;
+}
+
+.slider .swiper-button-next i,
+.slider .swiper-button-prev i {
+  @apply text-sm;
+}
     .deals__body,
     .categories__body{
         display: grid;
