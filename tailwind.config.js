@@ -2,11 +2,12 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    screens:{
-      sm:'480px',
-      md:'768px',
-      lg:'1024px',
-      
+   screens: {
+      sm: '640px',   // small devices
+      md: '768px',   // medium devices
+      lg: '1024px',  // large devices
+      xl: '1280px',  // extra large devices
+      '2xl': '1536px', // double extra large devices
     },
     extend: {
       colors : {

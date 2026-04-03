@@ -7,231 +7,117 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <header id="header" class="w-full bg-firstBackground ">
-        <div class="container">
-            <div class="header__top-bar pt-5 
-            lg:flex  lg:justify-between lg:items-center lg:h-auto 
-            md:h-auto md:p-0
-            h-[130px]">
-                <div class="header__welcome lg:my-[14px] mb-4">
-                    <p class="text-sm text-textColor">Welcome to world wide Megamart</p>
-                </div>
-                <div class="header__info lg:my-[12px]">
-                    <ul class="flex items-center justify-around flex-wrap gap-5">
-                        <li class="
-                        lg:flex lg:items-center lg:justify-end lg:flex-row
-                        
-                        flex justify-center items-center flex-col">
-                            <i class="fa-solid fa-location-dot text-primaryColor w-[18px] h-[18px] mr-[6px]"></i>
-                            <p class="text-[14px] ">Dilever to <span class="font-semibold">423651</span></p>
-                            <!-- border right -->
-                        </li>
-                        <div class="separator"></div>
-                        <li class="lg:flex lg:items-center lg:justify-end lg:flex-row
-                        flex justify-center items-center flex-col">
-                            <i class="fa-solid fa-truck-moving text-primaryColor w-[18px] h-[18px] mr-[6px]"></i>
-                            <p class="text-[14px]">Track your order</p>
-                            <!-- border right -->
-                        </li>
-                        <div class="separator"></div>
-                        <li class="lg:flex lg:items-center lg:justify-end lg:flex-row
-                        flex justify-center items-center flex-col">
-                            <i class="fa-solid fa-percent text-primaryColor w-[18px] h-[18px] mr-[6px]"></i>
-                            <p class="text-[14px]">All Offers</p>
-                        </li>
+<body class="overflow-x-hidden">
+    <!-- header -->
+    <header id="header" class="w-full relative text-xs border-b border-borderColor">
+        <div class="bg-thirdBackground hidden lg:block">
+            <div class="container">
+                <div class="header__top-bar h-10 flex justify-between items-center">
+                    <p class="text-textColor">Welcome to worldwide Megamart!</p>
+                    <ul class="flex items-center gap-4 text-textColor">
+                        <li class="flex items-center gap-2"><i
+                                class="fa-solid fa-location-dot text-primaryColor"></i>Deliver to 423651</li>
+                        <li class="separator h-4"></li>
+                        <li class="flex items-center gap-2"><i
+                                class="fa-solid fa-truck-moving text-primaryColor"></i>Track your order</li>
+                        <li class="separator h-4"></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-percent text-primaryColor"></i>All
+                            Offers</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </header>
-    <nav class="bg-white w-full py-1  ">
-        <div class="container">
-            <div class="nav__main flex justify-between items-center flex-wrap gap-4 py-[16px] lg:flex-nowrap">
-                <div class="nav__logo flex flex-wrap gap-3 items-center justify-start">
-                    <div class="nav__logo-icon w-[48px] h-[48px] flex justify-center items-center bg-thirdBackground rounded">
-                        <i class="fa-solid fa-bars-staggered text-3xl text-primaryColor mt-4 ml-[12px] mb-[14px] mr-[10px]"></i>
+
+        <nav class="bg-white">
+            <div class="container py-3 lg:py-4">
+                <div class="flex items-center justify-between gap-4 lg:gap-6">
+                    <div class="flex items-center gap-3 lg:w-[220px]">
+                        <button id="hamburger" class="h-9 w-9 rounded-md bg-thirdBackground text-primaryColor lg:hidden"
+                            aria-label="Open menu">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                        <button
+                            class="hidden lg:flex h-9 w-9 rounded-md bg-thirdBackground text-primaryColor items-center justify-center"
+                            aria-label="Categories">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                        <a href="#"
+                            class="text-primaryColor text-2xl lg:text-[38px] leading-none font-bold font-HostGrotesk">MegaMart</a>
                     </div>
-                <p class="text-primaryColor text-xl ml-4 font-bold lg:text-3xl">MegaMart</p>
-                </div>
-                <div class="nav__searchbar relative flex justify-between items-center  bg-thirdBackground rounded w-[350px] h-[48px] py-[15px] px-4">
-                    <!-- input -->
-                    <input 
-                        type="text"
-                        placeholder="Search essentials, groceries and more..."
-                        class="w-full h-full rounded bg-thirdBackground pl-10 pr-10 text-xs outline-none"
-                    />
-                    <i class="fa-solid fa-magnifying-glass 
-                        absolute left-3 top-1/2 -translate-y-1/2 text-primaryColor"></i>
-                    <i class="fa-solid fa-list 
-                        absolute right-3 top-1/2 -translate-y-1/2 text-primaryColor"></i>
-                </div>
-                <div class="nav__data flex ">
-                    <div class="nav__data-auth flex items-center  pr-5">
-                        <i class="fa-solid fa-user mr-[6px] py-[3px] text-primaryColor"></i>
-                        <p class="py-[3px] font-bold">Sign Up/Sign In</p>
+
+                    <!-- Search bar (hidden on mobile) -->
+                    <div class="hidden md:flex flex-1 relative items-center bg-thirdBackground rounded-xl h-11 px-4">
+                        <i class="fa-solid fa-magnifying-glass text-primaryColor"></i>
+                        <input type="text" placeholder="Search essentials, groceries and more..."
+                            class="w-full bg-transparent px-3 text-sm outline-none" />
+                        <i class="fa-solid fa-list text-primaryColor"></i>
                     </div>
-                    <div class="separator mr-2"></div>
-                    <div class="nav__cart flex items-center gap-1  ">
-                        <i class="fa-solid fa-cart-shopping  text-primaryColor"></i>
-                        <p>Cart</p>
+
+                    <!-- User actions -->
+                    <div class="flex items-center gap-4 lg:gap-6 text-sm text-headingColor whitespace-nowrap">
+                        <a href="#" class="hidden lg:flex items-center gap-2 font-semibold"><i
+                                class="fa-regular fa-user text-primaryColor"></i>Sign Up/Sign In
+                        </a>
+                        <a href="#" class="flex items-center gap-2 font-semibold"><i
+                                class="fa-solid fa-cart-shopping text-primaryColor"></i>Cart
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:hidden mt-3 relative flex items-center bg-thirdBackground rounded-xl h-11 px-4">
+                    <i class="fa-solid fa-magnifying-glass text-primaryColor"></i>
+                    <input type="text" placeholder="Search essentials, groceries and more..."
+                        class="w-full bg-transparent px-3 text-sm outline-none" />
+                    <i class="fa-solid fa-list text-primaryColor"></i>
+                </div>
+            </div>
+
+            <div class="border-t border-borderColor">
+                <div class="container">
+                    <div class="nav-pills flex items-center gap-2 py-3 overflow-x-auto whitespace-nowrap">
+                        <button class="btn-primary px-5 py-2 text-xs">Groceries <i
+                                class="fa-solid fa-angle-down ml-1"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Premium Fruits <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Home & Kitchen <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Fashion <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Electronics <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Beauty <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Home Improvement <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
+                        <button class="btn px-5 py-2 text-xs bg-thirdBackground">Sports, Toys & Luggage <i
+                                class="fa-solid fa-angle-down ml-1 text-primaryColor"></i></button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="line"></div>
-        <div class="container">
-                <div class="nav__categories 
-                grid grid-cols-2 gap-1 mt-1 pt-[8px] pb-[8px] text-sm
-                md:text-[1rem] lg:grid-cols-8">
-                    <div class="nav__category--groceries-dropdown relative group ">
-        
-                    <button class="nav__category--groceries-btn btn-primary flex  items-center gap-1">
-                        Groceries
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
+        </nav>
 
-                    <div class="nav__category--groceries-dropdownContent 
-                        absolute  min-h-10 
-                        flex-col mx-1 p-2 
-                        hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor ">
-                        
-                        <a class="px-1 font-semibold border-b" href="#">item one</a>
-                        <a class="px-1 font-semibold border-b" href="#">item two</a>
-                        <a class="px-1 font-semibold border-b" href="#">item three</a>
-                    </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                    <div class="nav__category--groceries-dropdown relative group ">
-            
-                        <button class="nav__category--groceries-btn btn flex  items-center gap-1">
-                            Groceries
-                            <i class="fa-solid fa-chevron-down text-primaryColor"></i>
-                        </button>
-
-                        <div class="nav__category--groceries-dropdownContent 
-                            absolute min-w-20 min-h-10 
-                            flex-col mx-1 p-2 
-                            hidden group-hover:flex z-50 w-auto bg-white border border-primaryColor text-headingColor">
-                            
-                            <a class="px-2 font-semibold border-b" href="#">item one</a>
-                            <a class="px-2 font-semibold border-b" href="#">item two</a>
-                            <a class="px-2 font-semibold border-b" href="#">item three</a>
-                        </div>
-
-                    </div>
-                </div>
-        </div>
-        <div class="line"></div>
-    </nav>
+        <aside id="mobileMenu"
+            class="fixed top-0 left-0 z-40 h-full w-72 bg-white shadow-xl -translate-x-full transition-transform duration-300 lg:hidden">
+            <div class="p-4 border-b border-borderColor flex justify-between items-center">
+                <p class="text-primaryColor text-2xl font-bold font-HostGrotesk">MegaMart</p>
+                <button id="closeMenu" class="text-headingColor" aria-label="Close menu"><i
+                        class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <ul class="p-4 space-y-4 text-sm text-headingColor font-medium">
+                <li><a href="#">Groceries</a></li>
+                <li><a href="#">Premium Fruits</a></li>
+                <li><a href="#">Home & Kitchen</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Home Improvement</a></li>
+                <li><a href="#">Sports, Toys & Luggage</a></li>
+                <li><a href="#">Sign Up/Sign In</a></li>
+            </ul>
+        </aside>
+        <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/40 z-30 hidden lg:hidden"></div>
+    </header>
+    
     <!-- slider -->
     <section class="slider w-full relative ">
         <div class="container ">
