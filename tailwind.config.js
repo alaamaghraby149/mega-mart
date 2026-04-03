@@ -2,20 +2,13 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-   screens: {
-      sm: '640px',   // small devices
-      md: '768px',   // medium devices
-      lg: '1024px',  // large devices
-      xl: '1280px',  // extra large devices
-      '2xl': '1536px', // double extra large devices
-    },
     extend: {
-      colors : {
-        primaryColor: '#008ECC',
+      colors: {
+        primaryColor: "#008ECC",
         textColor: "#666666",
-        headingColor: '#222222',
-        lightColor: '#888888',      
-        borderColor: '#EDEDED',
+        headingColor: "#222222",
+        lightColor: "#888888",
+        borderColor: "#EDEDED",
         firstBackground: "#F5F5F5",
         secondBackground: "#F6F6FC",
         thirdBackground: "#F3F9FB",
@@ -25,15 +18,19 @@ module.exports = {
       },
     },
     container: {
-      center:true,
-      
-
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "4rem",
+        "2xl": "4rem",
+      },
     },
-    fontFamily : {
-      HostGrotesk:['Host Grotesk','sans-serif'],
-      dmsans: ['DM Sans','sans-serif']
-    }
+    fontFamily: {
+      HostGrotesk: ["Host Grotesk", "sans-serif"],
+      dmsans: ["DM Sans", "sans-serif"],
+    },
   },
   plugins: [],
-}
-
+};

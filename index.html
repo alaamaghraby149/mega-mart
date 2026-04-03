@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="./dist/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
+
 <body class="overflow-x-hidden">
+
     <!-- header -->
     <header id="header" class="w-full relative text-xs border-b border-borderColor">
         <div class="bg-thirdBackground hidden lg:block">
@@ -56,11 +59,9 @@
                     <!-- User actions -->
                     <div class="flex items-center gap-4 lg:gap-6 text-sm text-headingColor whitespace-nowrap">
                         <a href="#" class="hidden lg:flex items-center gap-2 font-semibold"><i
-                                class="fa-regular fa-user text-primaryColor"></i>Sign Up/Sign In
-                        </a>
+                                class="fa-regular fa-user text-primaryColor"></i>Sign Up/Sign In</a>
                         <a href="#" class="flex items-center gap-2 font-semibold"><i
-                                class="fa-solid fa-cart-shopping text-primaryColor"></i>Cart
-                        </a>
+                                class="fa-solid fa-cart-shopping text-primaryColor"></i>Cart</a>
                     </div>
                 </div>
 
@@ -117,314 +118,306 @@
         </aside>
         <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/40 z-30 hidden lg:hidden"></div>
     </header>
-    
+
     <!-- slider -->
-    <section class="slider w-full relative">
+    <section class="slider w-full relative py-4 lg:py-6">
         <div class="container">
-            <div class="slider__frame relative">
-                <div class="swiper mySwiper bg-[#212844]
-            w-full 
-            h-[316px] 
-            rounded overflow-hidden">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide !w-full 
-                    flex items-center justify-between  
-                    h-full">
-                            <div class="slider__deal 
-                        flex flex-col gap-4 
-                        max-w-[60%] ">
-                                <div class="slider__deal-details 
-                            flex flex-col gap-4 
-                            text-white 
-                            pt-[40px] pb-[30px] pl-[90px] ">
-                                    <p class="text-[22px] leading-[30px] font-semibold">Best Deal Online on smart
-                                        watches
+            <div class="relative">
+                <div class="swiper mySwiper bg-[#212844] w-full h-[240px] md:h-[290px] lg:h-[320px] rounded-2xl overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide !w-full h-full">
+                            <div class="h-full flex items-center justify-between px-5 md:px-10 lg:px-16">
+                                <div class="slider__deal text-white max-w-[62%] md:max-w-[55%]">
+                                    <p class="text-sm md:text-2xl leading-tight font-semibold">Best Deal Online on smart
+                                        watches</p>
+                                    <p class="text-3xl md:text-6xl font-bold leading-tight uppercase mt-2">Smart
+                                        Wearable.
                                     </p>
-                                    <p class="text-[51px] font-bold leading-[50px]">Smart WearAble.</p>
-                                    <p class="font-semibold">Up to 80% off</p>
+                                    <p class="text-2xl md:text-4xl font-semibold mt-2">Up to 80% OFF</p>
                                 </div>
-                                <div class="slider__controller 
-                            flex gap-2 
-                            mt-6 
-                            text-white pb-[39px] pl-[90px]">
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
+                                <div class="slider__img shrink-0">
+                                    <a href="#"><img class="w-[120px] md:w-[180px] lg:w-[230px]"
+                                            src="./src/images/image 2.png" alt="Smart watch"></a>
                                 </div>
-                            </div>
-                            <div class="slider__img">
-                                <a href="#"><img class=" w-[200px] " src="./src/images/image 2.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="swiper-slide !w-full bg-secondBackground
-                    flex items-center justify-between  
-                    h-full">
-                            <div class="slider__deal 
-                        flex flex-col gap-4 
-                        max-w-[60%] ">
-                                <div class="slider__deal-details 
-                            flex flex-col gap-4 
-                            text-white 
-                            pt-[40px] pb-[30px] pl-[90px] ">
-                                    <p class="text-[22px] leading-[30px] font-semibold">Best Deal Online on smart
-                                        watches
+                        <div class="swiper-slide !w-full h-full ">
+                            <div class="h-full flex items-center justify-between px-5 md:px-10 lg:px-16">
+                                <div class="slider__deal text-white max-w-[62%] md:max-w-[55%]">
+                                    <p class="text-sm md:text-2xl leading-tight font-semibold">Best Deal Online on smart
+                                        watches</p>
+                                    <p class="text-3xl md:text-6xl font-bold leading-tight uppercase mt-2">Smart
+                                        Wearable.
                                     </p>
-                                    <p class="text-[51px] font-bold leading-[50px]">Smart WearAble.</p>
-                                    <p class="font-semibold">Up to 80% off</p>
+                                    <p class="text-2xl md:text-4xl font-semibold mt-2">Up to 80% OFF</p>
                                 </div>
-                                <div class="slider__controller 
-                            flex gap-2 
-                            mt-6 
-                            text-white pb-[39px] pl-[90px]">
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
-                                    <i class="fa-solid fa-circle text-[8px]"></i>
+                                <div class="slider__img shrink-0">
+                                    <a href="#"><img class="w-[120px] md:w-[180px] lg:w-[230px]"
+                                            src="./src/images/image 2.png" alt="Smart watch"></a>
                                 </div>
-                            </div>
-                            <div class="slider__img">
-                                <a href="#"><img class=" w-[200px] " src="./src/images/image 2.png" alt=""></a>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination !bottom-2"></div>
                 </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-next 
-            absolute top-1/2 -translate-y-1/2 -right-6
-            z-10 flex items-center justify-center">
+                <div class="swiper-button-next absolute right-2 md:-right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full z-10 hidden md:flex items-center justify-center">
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
-
-                <div class="swiper-button-prev 
-            absolute -left-6 top-1/2 -translate-y-1/2
-            z-10 flex items-center justify-center">
+                <div
+                    class="swiper-button-prev absolute left-2 md:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full z-10 hidden md:flex items-center justify-center">
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- deals -->
-    <div class="deals relative my-12">
+    <div class="deals relative my-10 lg:my-12">
         <div class="container">
-            <div class="deals__top 
-            flex align-items-center justify-between flex-wrap mb-2 ">
-                <div class="title text-sm">Grab the best deals on <span class="text-primaryColor">smartphones</span></div>
-                <div class="view ">
+            <div class="deals__top flex items-center justify-between gap-3">
+                <div class="title text-base pb-3 border-b-4 border-primaryColor sm:text-xl lg:text-2xl mb-1">Grab the best deals on <span
+                        class="text-primaryColor">smartphones</span></div>
+                <div class="view whitespace-nowrap text-sm">
                     <a class="d-inline-block text-headingColor" href="#">View all</a>
                     <i class="fa-solid fa-angle-right text-primaryColor"></i>
                 </div>
             </div>
-            <div class="line2 mb-5"></div>
             <div class="deals__body ">
                 <div class="deal__card relative  rounded-t-[16px] rounded-b-[16px]">
-                    <div class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
+                    <div
+                        class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
                         <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
                     </div>
                     <div class="deal__card--details p-3 flex justify-center flex-col gap-5">
                         <div>
-                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra</div>
+                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra
+                            </div>
                             <div class="deal__card--price flex justify-content-between w-full h-auto">
                                 <p class="text-headingColor font-semibold mr-5  lh-base ">$3299</p>
                                 <span class="text-headingColor fw-light line-through">$3299</span>
                             </div>
                         </div>
-                        
+
                         <div class="deal__card--endprice pt-2 mb-2  border-t border-[#EDEDED] flex items-center">
                             <p class="text-[#249B3E] font-semibold">Save - $3299</p>
                         </div>
                         <div class="sale-percent  absolute -top-[2px] -right-1">
-                        <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
-                            <span>65%</span>
-                            <span>OFF</span>
-                        </div>
+                            <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
+                                <span>65%</span>
+                                <span>OFF</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="deal__card relative border-primaryColor  rounded-t-[16px] rounded-b-[16px]">
-                    <div class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
+                    <div
+                        class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
                         <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
                     </div>
                     <div class="deal__card--details p-3 flex justify-center flex-col gap-5">
                         <div>
-                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra</div>
+                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra
+                            </div>
                             <div class="deal__card--price flex justify-content-between w-full h-auto">
                                 <p class="text-headingColor font-semibold mr-5  lh-base ">$3299</p>
                                 <span class="text-headingColor fw-light line-through">$3299</span>
                             </div>
                         </div>
-                        
+
                         <div class="deal__card--endprice pt-2 mb-2  border-t border-[#EDEDED] flex items-center">
                             <p class="text-[#249B3E] font-semibold">Save - $3299</p>
                         </div>
                         <div class="sale-percent  absolute -top-[2px] -right-1">
-                        <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
-                            <span>65%</span>
-                            <span>OFF</span>
-                        </div>
+                            <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
+                                <span>65%</span>
+                                <span>OFF</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="deal__card relative  rounded-t-[16px] rounded-b-[16px]">
-                    <div class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
+                    <div
+                        class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
                         <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
                     </div>
                     <div class="deal__card--details p-3 flex justify-center flex-col gap-5">
                         <div>
-                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra</div>
+                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra
+                            </div>
                             <div class="deal__card--price flex justify-content-between w-full h-auto">
                                 <p class="text-headingColor font-semibold mr-5  lh-base ">$3299</p>
                                 <span class="text-headingColor fw-light line-through">$3299</span>
                             </div>
                         </div>
-                        
+
                         <div class="deal__card--endprice pt-2 mb-2  border-t border-[#EDEDED] flex items-center">
                             <p class="text-[#249B3E] font-semibold">Save - $3299</p>
                         </div>
                         <div class="sale-percent  absolute -top-[2px] -right-1">
-                        <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
-                            <span>65%</span>
-                            <span>OFF</span>
-                        </div>
+                            <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
+                                <span>65%</span>
+                                <span>OFF</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="deal__card relative  rounded-t-[16px] rounded-b-[16px]">
-                    <div class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
+                    <div
+                        class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
                         <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
                     </div>
                     <div class="deal__card--details p-3 flex justify-center flex-col gap-5">
                         <div>
-                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra</div>
+                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra
+                            </div>
                             <div class="deal__card--price flex justify-content-between w-full h-auto">
                                 <p class="text-headingColor font-semibold mr-5  lh-base ">$3299</p>
                                 <span class="text-headingColor fw-light line-through">$3299</span>
                             </div>
                         </div>
-                        
+
                         <div class="deal__card--endprice pt-2 mb-2  border-t border-[#EDEDED] flex items-center">
                             <p class="text-[#249B3E] font-semibold">Save - $3299</p>
                         </div>
                         <div class="sale-percent  absolute -top-[2px] -right-1">
-                        <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
-                            <span>65%</span>
-                            <span>OFF</span>
-                        </div>
+                            <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
+                                <span>65%</span>
+                                <span>OFF</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="deal__card relative  rounded-t-[16px] rounded-b-[16px]">
-                    <div class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
+                    <div
+                        class="deal__card--img  w-full bg-firstBackground flex justify-center items-center p-3 rounded-tr-[16px] rounded-tl-[16px]">
                         <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
                     </div>
                     <div class="deal__card--details p-3 flex justify-center flex-col gap-5">
                         <div>
-                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra</div>
+                            <div class="deal__card--name text-[1rem] text-headingColor mb-3 lh-base ">Galaxy s22 Ultra
+                            </div>
                             <div class="deal__card--price flex justify-content-between w-full h-auto">
                                 <p class="text-headingColor font-semibold mr-5  lh-base ">$3299</p>
                                 <span class="text-headingColor fw-light line-through">$3299</span>
                             </div>
                         </div>
-                        
+
                         <div class="deal__card--endprice pt-2 mb-2  border-t border-[#EDEDED] flex items-center">
                             <p class="text-[#249B3E] font-semibold">Save - $3299</p>
                         </div>
                     </div>
                     <div class="sale-percent  absolute -top-[2px] -right-1">
-                    <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
-                        <span>65%</span>
-                        <span>OFF</span>
-                    </div>
+                        <div class="px-2 py-2 flex flex-col justify-center items-center font-semibold">
+                            <span>65%</span>
+                            <span>OFF</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </div>
-    <!-- categories -->
-    <div class="categories relative my-12">
-        <div class="container">
-            <div class="categories__top 
-            flex align-items-center justify-between flex-col md:flex-row mb-2">
-                <div class="title">Shop From <span class="text-primaryColor">Top Categories</span></div>
-                <div class="view ">
-                    <a class="d-inline-block text-headingColor" href="#">View all</a>
-                    <i class="fa-solid fa-angle-right text-primaryColor"></i>
-                </div>
-            </div>
-            
-            <div class="categories__body ">
-                <div class="category__card relative border-none ">
-                    <div class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full border border-primaryColor shadow-lightColor shadow-lg ">
-                        <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
-                    </div>
-                    <div class="category__card--name mt-5 flex justify-center items-center">
-                        <p class="font-medium text-headingColor">Mobile</p>
-                    </div>
-                </div>
-                <div class="category__card relative border-none ">
-                    <div class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full border ">
-                        <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
-                    </div>
-                    <div class="category__card--name mt-5 flex justify-center items-center">
-                        <p class="font-medium text-headingColor">Mobile</p>
-                    </div>
-                </div>
-                <div class="category__card relative border-none ">
-                    <div class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
-                        <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
-                    </div>
-                    <div class="category__card--name mt-5 flex justify-center items-center">
-                        <p class="font-medium text-headingColor">Mobile</p>
-                    </div>
-                </div>
-                <div class="category__card relative border-none ">
-                    <div class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
-                        <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
-                    </div>
-                    <div class="category__card--name mt-5 flex justify-center items-center">
-                        <p class="font-medium text-headingColor">Mobile</p>
-                    </div>
-                </div>
-                <div class="category__card relative border-none ">
-                    <div class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
-                        <img class="max-w-full h-auto" src="./src/images/image 3.png" alt="">
-                    </div>
-                    <div class="category__card--name mt-5 flex justify-center items-center">
-                        <p class="font-medium text-headingColor">Mobile</p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        
     </div>
-    <!-- electronics -->
-    <div class="electronics mb-12">
+
+    <!-- categories -->
+    <div class="categories relative my-10 lg:my-12">
         <div class="container">
-            <div class="electronics__top 
-            flex align-items-center justify-between flex-col mb-2 md:flex-row ">
-                <div class="title">Top <span class="text-primaryColor">Electronics Brands</span></div>
-                <div class="view ">
+            <div class="categories__top flex items-center justify-between gap-3">
+                <div class="title text-base pb-3 border-b-4 border-primaryColor sm:text-xl lg:text-2xl mb-1">Shop From <span class="text-primaryColor">Top
+                        Categories</span></div>
+                <div class="view whitespace-nowrap text-sm">
                     <a class="d-inline-block text-headingColor" href="#">View all</a>
                     <i class="fa-solid fa-angle-right text-primaryColor"></i>
                 </div>
             </div>
-            <div class="electronics__body place-items-center ">
-                <div class="electronics__card grid grid-cols-1 gap-3 lg:grid-cols-3 ">
-                    <div class="electronic__card--img  w-full    ">
-                        <img class="max-w-full block" src="./src/images/Group 50.png" alt="">
+            <div class="categories__body md:grid-cols-2 md:gap-5">
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full border border-primaryColor shadow-lightColor shadow-lg ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
                     </div>
-                    <div class="electronic__card--img  w-full    ">
-                        <img class="max-w-full block" src="./src/images/Group 51.png" alt="">
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
                     </div>
-                    <div class="electronic__card--img  w-full    ">
-                        <img class="max-w-full block" src="./src/images/Group 52.png" alt="">
+                </div>
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full border ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
+                    </div>
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
+                    </div>
+                </div>
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
+                    </div>
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
+                    </div>
+                </div>
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
+                    </div>
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
+                    </div>
+                </div>
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
+                    </div>
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
+                    </div>
+                </div>
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
+                    </div>
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
+                    </div>
+                </div>
+                <div class="category__card relative border-none ">
+                    <div
+                        class="category__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded-full ">
+                        <img class="w-full h-auto" src="./src/images/image 3.png" alt="">
+                    </div>
+                    <div class="category__card--name mt-5 flex justify-center items-center">
+                        <p class="font-medium text-headingColor">Mobile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- electronics -->
+    <div class="electronics mb-10 lg:mb-12">
+        <div class="container">
+            <div class="electronics__top flex items-center justify-between gap-3">
+                <div class="title text-base pb-3 border-b-4 border-primaryColor sm:text-xl lg:text-2xl mb-1">Top <span class="text-primaryColor">Electronics
+                        Brands</span></div>
+                <div class="view whitespace-nowrap text-sm">
+                    <a class="d-inline-block text-headingColor" href="#">View all</a>
+                    <i class="fa-solid fa-angle-right text-primaryColor"></i>
+                </div>
+            </div>
+            <div class="electronics__body">
+                <div class="electronics__card grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 ">
+                    <div class="electronic__card--img w-full">
+                        <img class="w-full block" src="./src/images/Group 50.png" alt="">
+                    </div>
+                    <div class="electronic__card--img w-full">
+                        <img class="w-full block" src="./src/images/Group 51.png" alt="">
+                    </div>
+                    <div class="electronic__card--img w-full">
+                        <img class="w-full block" src="./src/images/Group 52.png" alt="">
                     </div>
                 </div>
                 <div class="electronics__nav mt-7 flex items-center justify-center">
@@ -436,22 +429,24 @@
             </div>
         </div>
     </div>
+
     <!-- essentials -->
-    <div class="essentials relative my-20">
+    <div class="essentials relative my-12 lg:my-20">
         <div class="container">
-            <div class="essentials__top 
-            flex align-items-center justify-between flex-col md:flex-row mb-2">
-                <div class="title">Daily <span class="text-primaryColor">Essentials</span></div>
-                <div class="view ">
+            <div class="essentials__top flex items-center justify-between gap-3">
+                <div class="title text-base pb-3 border-b-4 border-primaryColor sm:text-xl lg:text-2xl mb-1">Daily <span
+                        class="text-primaryColor">Essentials</span></div>
+                <div class="view whitespace-nowrap text-sm">
                     <a class="d-inline-block text-headingColor" href="#">View all</a>
                     <i class="fa-solid fa-angle-right text-primaryColor"></i>
                 </div>
             </div>
-            
-            <div class="essentials__body grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
+            <div class="essentials__body grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-3">
                 <div class="essential__card     ">
-                    <div class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded border border-primaryColor shadow-lightColor shadow-lg ">
-                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+                    <div
+                        class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded border border-primaryColor shadow-lightColor shadow-lg ">
+                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png"
+                            alt="">
                     </div>
                     <div class="essential__card--name mt-5 flex flex-col justify-center items-center ">
                         <p class="font-semibold mt-2">Daily Essentials</p>
@@ -459,8 +454,10 @@
                     </div>
                 </div>
                 <div class="essential__card     ">
-                    <div class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
-                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+                    <div
+                        class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
+                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png"
+                            alt="">
                     </div>
                     <div class="essential__card--name mt-5 flex flex-col justify-center items-center ">
                         <p class="font-semibold mt-2">Daily Essentials</p>
@@ -468,8 +465,10 @@
                     </div>
                 </div>
                 <div class="essential__card     ">
-                    <div class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
-                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+                    <div
+                        class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
+                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png"
+                            alt="">
                     </div>
                     <div class="essential__card--name mt-5 flex flex-col justify-center items-center ">
                         <p class="font-semibold mt-2">Daily Essentials</p>
@@ -477,8 +476,10 @@
                     </div>
                 </div>
                 <div class="essential__card     ">
-                    <div class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
-                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+                    <div
+                        class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
+                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png"
+                            alt="">
                     </div>
                     <div class="essential__card--name mt-5 flex flex-col justify-center items-center ">
                         <p class="font-semibold mt-2">Daily Essentials</p>
@@ -486,8 +487,10 @@
                     </div>
                 </div>
                 <div class="essential__card     ">
-                    <div class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
-                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+                    <div
+                        class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
+                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png"
+                            alt="">
                     </div>
                     <div class="essential__card--name mt-5 flex flex-col justify-center items-center ">
                         <p class="font-semibold mt-2">Daily Essentials</p>
@@ -495,8 +498,10 @@
                     </div>
                 </div>
                 <div class="essential__card     ">
-                    <div class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
-                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+                    <div
+                        class="essential__card--img  w-full bg-firstBackground flex justify-center items-center p-4 rounded  ">
+                        <img class="max-w-full h-auto" src="./src/images/41624-7-groceries-hd-download-hd-png 1.png"
+                            alt="">
                     </div>
                     <div class="essential__card--name mt-2 flex flex-col justify-center items-center ">
                         <p class="font-semibold mt-5">Daily Essentials</p>
@@ -504,14 +509,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
-        
     </div>
+
     <!-- footer -->
     <footer class="bg-primaryColor h-auto w-full text-white">
         <div class="container">
-            <div class="footer__content grid grid-cols-1 gap-x-60 pt-12 lg:grid-cols-3">
+            <div class="footer__content grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 pt-12 pb-6">
                 <div class="mb-6 w-full ">
                     <h2 class=" font-bold lh-base text-2xl mb-5">MegaMart</h2>
                     <div class="footer__content--contact flex flex-col justify-center gap-4">
@@ -533,13 +537,13 @@
                     </div>
                     <div class="download flex flex-col gap-2 justify-center mt-5">
                         <h3 class="font-bold">Download App</h3>
-                        <div class="flex gap-2">
-                            <img src="./src/images/image 10.png" alt="">
-                            <img src="./src/images/image 11.png" alt="">
+                        <div class="flex flex-col sm:flex-row flex-wrap gap-2 w-full">
+                            <img class="w-full max-w-[220px] h-auto" src="./src/images/image 10.png" alt="Google Play">
+                            <img class="w-full max-w-[220px] h-auto" src="./src/images/image 11.png" alt="App Store">
                         </div>
                     </div>
                 </div>
-                <div class="popular-categories mb-6 w-full">
+                <div class="popular-categories w-full">
                     <div class="popular-categories-heading">
                         <h2 class="font-bold ">Popular Categories</h2>
                         <div class="footer__line"></div>
@@ -555,7 +559,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="services  w-full">
+                <div class="services w-full">
                     <div class="services-heading">
                         <h2 class="font-bold ">Customer Services</h2>
                         <div class="footer__line"></div>
@@ -569,15 +573,18 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
-            <div class="footer__separator w-[75%] bg-white h-[2px] my-0 mx-auto opacity-35 rounded mt-4"></div>
-            <div class="rights  flex items-center justify-center mt-4 py-3">
-                <p class="">&copy; 2026 All Rights reserved. Reliance Retail Ltd </p>
+            <div class="footer__separator w-full lg:w-[75%] bg-white h-[2px] my-0 mx-auto opacity-35 rounded mt-2">
+            </div>
+            <div class="rights flex items-center justify-center mt-4 py-3 text-center text-sm">
+                <p>&copy; 2026 All Rights reserved. Reliance Retail Ltd</p>
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js"></script>
 </body>
+
 </html>
